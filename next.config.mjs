@@ -1,9 +1,12 @@
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ["cdn.pixabay.com"], // ✅ allow external image host
-  },
-  outputFileTracingRoot: "D:\\Works\\SehatBandhu\\clinic"
+  outputFileTracingRoot: __dirname,
 };
 
 export default nextConfig;
