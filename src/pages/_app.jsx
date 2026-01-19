@@ -13,63 +13,64 @@ function AppWrapper({ Component, pageProps }) {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchUser()); // fetch logged-in user after Redux is ready
+    dispatch(fetchUser()); // Fetch logged-in user after Redux initializes
   }, [dispatch]);
 
   return (
     <>
       <Head>
+        {/* Basic Meta */}
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* SEO Meta */}
+        <title>Sehat Bandhus | Smart Healthcare & Doctor Appointments</title>
         <meta
           name="description"
-          content="The responsive professional Doccure template offers many features, like scheduling appointments with top doctors, clinics, and hospitals via voice, video call & chat."
+          content="Sehat Bandhus is a modern healthcare platform to book doctor appointments, online consultations, video calls, and chat with trusted medical professionals."
         />
         <meta
           name="keywords"
-          content="practo clone, doccure, doctor appointment, Practo clone html template, doctor booking template"
+          content="Sehat Bandhus, doctor appointment, online doctor consultation, healthcare startup, book doctor online, telemedicine India"
         />
-        <meta
-          name="author"
-          content="Practo Clone HTML Template - Doctor Booking Template"
-        />
+        <meta name="author" content="Sehat Bandhus Team" />
 
-        {/* Open Graph */}
-        <meta property="og:url" content="https://doccure.dreamstechnologies.com/html/" />
+        {/* Open Graph (Facebook / LinkedIn) */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Doctors Appointment HTML Website Templates | Doccure" />
+        <meta property="og:title" content="Sehat Bandhus | Smart Healthcare Platform" />
         <meta
           property="og:description"
-          content="The responsive professional Doccure template offers many features, like scheduling appointments with top doctors, clinics, and hospitals via voice, video call & chat."
+          content="Book appointments, consult doctors online, and manage your healthcare digitally with Sehat Bandhus."
         />
-        <meta property="og:image" content="/assets/img/preview-banner.jpg" />
+        <meta property="og:url" content="https://www.sehatbandhus.com" />
+        <meta property="og:image" content="/assets/img/og-banner.png" />
 
         {/* Twitter Meta */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="https://doccure.dreamstechnologies.com/html/" />
-        <meta property="twitter:url" content="https://doccure.dreamstechnologies.com/html/" />
-        <meta name="twitter:title" content="Doctors Appointment HTML Website Templates | Doccure" />
+        <meta name="twitter:title" content="Sehat Bandhus | Smart Healthcare Platform" />
         <meta
           name="twitter:description"
-          content="The responsive professional Doccure template offers many features, like scheduling appointments with top doctors, clinics, and hospitals via voice, video call & chat."
+          content="A next-gen healthcare startup offering doctor appointments, video consultations, and digital care."
         />
-        <meta name="twitter:image" content="/assets/img/preview-banner.jpg" />
+        <meta name="twitter:image" content="/assets/img/og-banner.png" />
 
-        <title>Doccure</title>
-        <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon" />
+        {/* Favicon */}
+        <link rel="icon" href="/assets/img/favicon.png" />
       </Head>
 
-      {/* ✅ Toast container added */}
+      {/* Toast Notifications */}
       <Toaster position="top-center" richColors closeButton />
 
       <Navbar />
       <Component {...pageProps} />
       <Footer />
-      <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
+      {/* Razorpay */}
+      <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     </>
   );
 }
+
 export default function App(props) {
   return (
     <Provider store={store}>
