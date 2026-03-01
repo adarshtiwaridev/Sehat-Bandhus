@@ -1,37 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🌿 SehatBandhus (Working Title)
 
-## Getting Started
+A mission-driven digital platform focused on improving accessibility, awareness, and efficiency in the health ecosystem.
+Currently under active development.
 
-First, run the development server:
+📌 Vision
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+SehatBandhus is a personal initiative aimed at building a technology-driven solution to simplify healthcare access and improve user experience in real-world scenarios.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project represents my long-term vision to create a scalable, impactful digital platform in the health domain.
+The name may evolve in the future as the product direction expands.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🚧 Development Status
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔄 Currently in active development
+🧠 Architecture planning phase + core feature implementation
+⚙️ Backend and frontend modules under structured build
 
-## Learn More
+This project is being developed step-by-step with scalability, security, and performance in mind.
 
-To learn more about Next.js, take a look at the following resources:
+🎯 Objectives
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Simplify healthcare-related processes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Provide user-friendly digital interface
 
-## Deploy on Vercel
+Enable scalable architecture for future expansion
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Build a reliable and secure system
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Sehat-Bandhus
+Ensure accessibility across devices
+
+🛠️ Planned Tech Stack
+
+Next.js
+
+React
+
+Tailwind CSS
+
+Node.js API Routes
+
+MongoDB / PostgreSQL
+
+Secure Authentication (JWT / Session)
+
+🔮 Future Roadmap
+
+Role-based user access
+
+Real-time data handling
+
+AI-powered assistance features
+
+Analytics dashboard
+
+Mobile optimization
+
+Cloud deployment & scaling
